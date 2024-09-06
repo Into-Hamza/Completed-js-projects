@@ -209,13 +209,26 @@ function primeFinder(num){
 //     1 2 1
 //   1 2 3 2 1
 // 1 2 3 4 3 2 1    print this
-let n =4
-let num = 1 
-let star = ' '
+let n =9
 let space = ''
-
+let space2 = ' '
 for (let i = 0; i < n ; i++) {
-    
+    // for lines 
+
+    for (let j = 0; j < n - i - 1 ; j++) {
+        // for spaces 
+        space += '  '
+
+    }
+    for (let j = 1; j <= i + 1; j++) {
+        // for first pattern 
+        space += j + ' '
+    }
+    for (let k = i; k > 0; k--) {
+        // for second pattern 
+        space += k + " "
+    }
+    space += '\n'
 }
 console.log(space)
 
