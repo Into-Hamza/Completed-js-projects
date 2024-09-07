@@ -307,7 +307,86 @@ for (let i = 0; i < n; i++) {
     }
     pattern += '\n'
 }
-console.log(pattern);
+// console.log(pattern);
 
 
 // ********************************* 👆 example 14 *********************************
+
+// Find prime numbers 
+function findPrime(params) {
+    let ans = true
+    for (let i = 2; i < params ; i++) {
+        if (params % i ==0) {
+            ans = false
+        }
+    }       
+    return ans
+}
+// let ans = findPrime(31)
+// console.log(ans);
+
+// ********************************* 👆 example 15 *********************************
+// Find nth prime number 
+
+function printPrimes(params) {
+    for (let i = 1; i <= params ; i++) {
+       let ans = findPrime(i)
+       if (ans) {
+        console.log(i)
+       }
+    }       
+}
+// printPrimes(19)
+
+
+// ********************************* 👆 example 16 *********************************
+
+// Find nth fibinacchi series
+
+// function findFibbinocchi(input) {
+    
+// }
+function fibonacciMemo(n) {
+    if(n<0) return 0
+    if(n === 2) return 1
+    let a = 0
+    let b = 1
+    let fib = 0
+    for (let i = 2; i <= n; i++) {
+        fib = a + b
+        a = b
+        b = fib
+    }
+   return fib
+}
+
+// console.log(fibonacciMemo(10))
+
+
+// ********************************* 👆 example 17 *********************************
+
+function whileloop(params) {
+    let no = 2
+    let ans = true
+    while (params > no) {
+        if (params % no == 0) {
+            ans = false
+        }
+        no++
+    }
+    return ans
+}
+
+
+// let whileans = whileloop(12)
+// console.log(whileans);
+
+
+// ********************************* 👆 example 18 *********************************
+
+
+
+
+
+
+// ********************************* 👆 example 19 *********************************
