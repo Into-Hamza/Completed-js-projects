@@ -385,8 +385,33 @@ function whileloop(params) {
 // ********************************* 👆 example 18 *********************************
 
 
+let number = -1432
+function reversenum(params) {
+    let ans = 0
+    let rem 
+    let isNegative = params < 0
+    params = Math.abs(params)
+    console.log(params)
+    while (params > 0) {
+        rem =  params % 10
+        ans =  ans*10 + rem
+        params = Math.floor(params / 10)
 
-
+    }
+    if (isNegative) {
+        ans = -ans
+    }
+    return (ans)
+}
+// console.log(reversenum(number))
+// console.log(number)
 
 
 // ********************************* 👆 example 19 *********************************
+
+
+
+
+
+
+// ********************************* 👆 example 20 *********************************
