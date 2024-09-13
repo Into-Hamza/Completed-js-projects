@@ -543,15 +543,49 @@
 // ********************************* 👆 example 25 *********************************
 
 
+// let arr = [2, 5, 77, 223, 334, 78, 69]
+
+// let start = 0
+// let negative = Infinity
+// let positive = -Infinity
+// while (start < arr.length - 1) {
+//     if (arr[start] < negative) {
+//         negative = arr[start] 
+//     }
+//     else if (arr[start] > positive) {
+//         positive = arr[start] 
+//     }
+//     start++
+// }
+// console.log(negative);
+// console.log(positive);
+
+// ********************************* 👆 example 26 *********************************
+
+
 let arr = [2, 5, 77, 223, 334, 78, 69]
 
 let start = 0
-let negative = -Infinity
-while (start < arr.length - 1) {
-    if (arr[start] > negative) {
-        []
+let swapped = []
+let negative = Infinity
+let positive = -Infinity
+if (arr.length>0) {
+    while (start < arr.length ) {
+        if (arr[start] < negative) {
+                    negative = arr[start] 
+                }
+                else if (arr[start] > positive) {
+                    positive = arr[start] 
+                }
+                start++
     }
+    let = maximum = arr.indexOf(positive)
+    let = minimum = arr.indexOf(negative);
+    [arr[minimum],arr[maximum]] = [arr[maximum],arr[minimum]]
+    
 }
 console.log(arr);
 
-// ********************************* 👆 example 26 *********************************
+
+
+// ********************************* 👆 example 27 *********************************
