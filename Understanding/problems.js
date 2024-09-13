@@ -281,61 +281,61 @@
 //  ***  ***   
 //  **    **
 //  *      *
-let n = 4
-let pattern = ''
-for (let i = 0; i < n; i++) {
-    for (let j = 0; j < i+1; j++) {
-        pattern += '*'
-    }
-    for (let k = 6 - 2*i + 1; k > 1 ; k--) {
-        pattern += ' '
-    }
-    for (let l = 0; l < i + 1; l++) {
-        pattern += '*'
-    }
-    pattern += '\n'
-}
-for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n-i; j++) {
-        pattern += '*'
-    }
-    for (let k = 2*i ; k > 0 ; k--) {
-        pattern += ' '
-    }
-    for (let l = n-i; l > 0; l--) {
-        pattern += '*'
-    }
-    pattern += '\n'
-}
+// let n = 4
+// let pattern = ''
+// for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < i+1; j++) {
+//         pattern += '*'
+//     }
+//     for (let k = 6 - 2*i + 1; k > 1 ; k--) {
+//         pattern += ' '
+//     }
+//     for (let l = 0; l < i + 1; l++) {
+//         pattern += '*'
+//     }
+//     pattern += '\n'
+// }
+// for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n-i; j++) {
+//         pattern += '*'
+//     }
+//     for (let k = 2*i ; k > 0 ; k--) {
+//         pattern += ' '
+//     }
+//     for (let l = n-i; l > 0; l--) {
+//         pattern += '*'
+//     }
+//     pattern += '\n'
+// }
 // console.log(pattern);
 
 
 // ********************************* 👆 example 14 *********************************
 
 // Find prime numbers 
-function findPrime(params) {
-    let ans = true
-    for (let i = 2; i < params ; i++) {
-        if (params % i ==0) {
-            ans = false
-        }
-    }       
-    return ans
-}
+// function findPrime(params) {
+//     let ans = true
+//     for (let i = 2; i < params ; i++) {
+//         if (params % i ==0) {
+//             ans = false
+//         }
+//     }       
+//     return ans
+// }
 // let ans = findPrime(31)
 // console.log(ans);
 
 // ********************************* 👆 example 15 *********************************
 // Find nth prime number 
 
-function printPrimes(params) {
-    for (let i = 1; i <= params ; i++) {
-       let ans = findPrime(i)
-       if (ans) {
-        console.log(i)
-       }
-    }       
-}
+// function printPrimes(params) {
+//     for (let i = 1; i <= params ; i++) {
+//        let ans = findPrime(i)
+//        if (ans) {
+//         console.log(i)
+//        }
+//     }       
+// }
 // printPrimes(19)
 
 
@@ -346,36 +346,36 @@ function printPrimes(params) {
 // function findFibbinocchi(input) {
     
 // }
-function fibonacciMemo(n) {
-    if(n<0) return 0
-    if(n === 2) return 1
-    let a = 0
-    let b = 1
-    let fib = 0
-    for (let i = 2; i <= n; i++) {
-        fib = a + b
-        a = b
-        b = fib
-    }
-   return fib
-}
+// function fibonacciMemo(n) {
+//     if(n<0) return 0
+//     if(n === 2) return 1
+//     let a = 0
+//     let b = 1
+//     let fib = 0
+//     for (let i = 2; i <= n; i++) {
+//         fib = a + b
+//         a = b
+//         b = fib
+//     }
+//    return fib
+// }
 
 // console.log(fibonacciMemo(10))
 
 
 // ********************************* 👆 example 17 *********************************
 
-function whileloop(params) {
-    let no = 2
-    let ans = true
-    while (params > no) {
-        if (params % no == 0) {
-            ans = false
-        }
-        no++
-    }
-    return ans
-}
+// function whileloop(params) {
+//     let no = 2
+//     let ans = true
+//     while (params > no) {
+//         if (params % no == 0) {
+//             ans = false
+//         }
+//         no++
+//     }
+//     return ans
+// }
 
 
 // let whileans = whileloop(12)
@@ -385,24 +385,24 @@ function whileloop(params) {
 // ********************************* 👆 example 18 *********************************
 
 
-let number = -1432
-function reversenum(params) {
-    let ans = 0
-    let rem 
-    let isNegative = params < 0
-    params = Math.abs(params)
-    console.log(params)
-    while (params > 0) {
-        rem =  params % 10
-        ans =  ans*10 + rem
-        params = Math.floor(params / 10)
+// let number = -1432
+// function reversenum(params) {
+//     let ans = 0
+//     let rem 
+//     let isNegative = params < 0
+//     params = Math.abs(params)
+//     console.log(params)
+//     while (params > 0) {
+//         rem =  params % 10
+//         ans =  ans*10 + rem
+//         params = Math.floor(params / 10)
 
-    }
-    if (isNegative) {
-        ans = -ans
-    }
-    return (ans)
-}
+//     }
+//     if (isNegative) {
+//         ans = -ans
+//     }
+//     return (ans)
+// }
 // console.log(reversenum(number))
 // console.log(number)
 
@@ -410,8 +410,148 @@ function reversenum(params) {
 // ********************************* 👆 example 19 *********************************
 
 
+// let str = "plplpl"
+// let palendrome = (params) =>{
+//     let ulti = params.split("").reverse().join("")
+//     if (params === ulti) {
+//         return true
+//     }else{
+//         return false
+//     }
 
+    
+// }
+// console.log(palendrome(str));
 
 
 
 // ********************************* 👆 example 20 *********************************
+
+    // let str = ["hamza", 10, 5, 'is', 1, 'a']
+    // let alphaOrder = (input)=>{
+    // let ans = 0
+    //     input.map((indexs)=>{
+    //     if (typeof indexs == 'number') {
+    //         ans += indexs
+    //     }
+    //     })
+    //     return ans
+    // }
+    // console.log(alphaOrder(str));
+    
+
+// ********************************* 👆 example 21 *********************************
+
+
+
+// let arr = [{
+//     name: 'hamza',
+//     gender: 'male'
+// },{
+//     name: 'hamna',
+//     gender: 'female'
+// },{
+//     name: 'hamza',
+//     gender: 'male'
+// },{
+//     name: 'hamna',
+//     gender: 'female'
+// },{
+//         name: 'hamza',
+//         gender: 'male'
+//     }
+
+// ]
+// let newarr =[]
+// arr.map((obj)=>{
+//     if (    obj['gender'] != 'female')   {
+//         newarr.push(obj)
+//     }
+    
+// })
+// console.log(newarr);
+
+
+// ********************************* 👆 example 22 *********************************
+
+
+// function isPowerOfTwo(num) {
+//     if (num <= 0) return false;
+
+//     // Calculate the logarithm base 2 of the number
+//     const log2 = Math.log2(num);
+//     console.log(log2);
+    
+//     // Check if the logarithm is an integer
+//     return Number.isInteger(log2);
+// }
+
+// // Example usage:
+// console.log(isPowerOfTwo(1));   // Output: true (2^0)
+// console.log(isPowerOfTwo(2));   // Output: true (2^1)
+// console.log(isPowerOfTwo(10737418240));   // Output: false
+// console.log(isPowerOfTwo(16));  // Output: true (2^4)
+// console.log(isPowerOfTwo(18));  // Output: false
+
+
+
+// ********************************* 👆 example 23 *********************************
+
+
+// let arr = [2, 5, 77, 223, 334, 78, 69]
+// let obj = {
+//     name: 'Hamza',
+//     class: 'none',
+//     degree: false,
+//     education: {
+//         first: 'school',
+//         second: 'college',
+//         third: 'university'
+//     }
+// }
+// // let [a, b,,, ...c] = arr
+// // let third = [...c,...arr]
+// // console.log(third);
+
+// function name({name:naam, fav='pineapple', education:{third}}) {
+//     console.log({naam,third,fav});
+    
+// }
+// name(obj)
+
+// ********************************* 👆 example 24 *********************************
+
+
+// class name {
+//     constructor(name,age,styding) {
+//         this.name = name
+//         this.age = age
+//         this.styding = styding
+//     }
+//      print() {
+//         return `${this.name.toUpperCase()}`
+        
+//     }    
+
+
+
+// }
+// let data = new name('hamza',25,false)
+// console.log(data.name,data['age'],data['styding'],data.print())
+
+
+// ********************************* 👆 example 25 *********************************
+
+
+let arr = [2, 5, 77, 223, 334, 78, 69]
+
+let start = 0
+let negative = -Infinity
+while (start < arr.length - 1) {
+    if (arr[start] > negative) {
+        []
+    }
+}
+console.log(arr);
+
+// ********************************* 👆 example 26 *********************************
